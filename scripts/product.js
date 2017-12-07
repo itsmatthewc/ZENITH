@@ -8,10 +8,10 @@ setInterval(function() {
        if (windowScroll > (hT-wH)){
          // we see the bottom yet article is still fixed
          // article can't be fixed anymore
-         article.style.position = "none";
+         article.style.position = "absolute";
          article.style.top = hT-wH + "px";
        } else if (windowScroll < (hT-wH) && !fixed) {
-         article.style.position = "none";
+         article.style.position = "fixed";
          article.style.top = "";
        }
 }, 1);
