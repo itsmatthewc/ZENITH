@@ -11,6 +11,7 @@
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
       crossorigin="anonymous"></script>
+    <script src="./scripts/form.js"></script>
   </head>
   <body>
     <header>
@@ -21,7 +22,7 @@
     </header>
     <h1>Contact</h1>
     <main>
-      <form>
+      <form id="contact-form" method="POST">
         <div>
           <label for="name">Name:</label>
           <input type="text" name="name" value="Your name">
@@ -31,10 +32,17 @@
           <input type="text" name="email" value="example@example.com">
         </div>
         <div>
+          <label for="state">State:</label>
+          <select name="state">
+            <option>New Jersey</option>
+            <option>Not New Jersey</option>
+          </select>
+        </div>
+        <div id="concerns">
           <label for="concerns">Questions, Comments, Concerns:</label>
           <textarea name="concerns" value="Your message here">Your message here</textarea>
         </div>
-        <input type="submit" value="Submit">
+        <input type="button" value="Submit" onclick="checkForm()">
       </form>
     </main>
     <footer>

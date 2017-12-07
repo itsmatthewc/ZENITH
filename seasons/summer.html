@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
     <link rel="stylesheet" type="text/css" href="../styles/seasons.css"/>
+    <script src="../scripts/quickpicload.js"></script>
   </head>
   <body>
     <header>
@@ -113,16 +114,5 @@
         </li>
       </ul>
     </footer>
-    <script>
-      function init() {
-        var imgDefer = document.getElementsByTagName('img');
-        for (var i = 0; i < imgDefer.length; i++) {
-          if (imgDefer[i].getAttribute('data-src')) {
-            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-          }
-        }
-      }
-      window.onload = init;
-    </script>
   </body>
 </html>

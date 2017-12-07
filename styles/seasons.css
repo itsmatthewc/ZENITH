@@ -38,3 +38,40 @@ h1 {
 #products li img {
   width: 250px;
 }
+
+.season-default {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+}
+
+.season-default:hover {
+  opacity: 0;
+}
+
+
+@media screen and (max-width: 1126px) {
+    h1 {
+      font-size: 50px;
+    }
+
+    #products {
+      margin: 0;
+      width: 100%;
+      display: inline;
+    }
+
+    #products li {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    img.season-default, img.season-special {
+      width: 45% !important;
+    }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/main.css"/>
+    <script src="./scripts/quickpicload.js"></script>
   </head>
   <body>
     <header>
@@ -47,7 +48,7 @@
         <li>
           <figure>
             <a href="./seasons/fall/orange.html">
-              <img class="default" data-src="./seasons/jess/special-19.jpg"/>
+              <img class="default" src="./seasons/jess/special-19.jpg"/>
               <img class="special" data-src="./seasons/jess/19-hue-orange-fullbody.jpg"/>
 
             </a>
@@ -87,16 +88,5 @@
         </li>
       </ul>
     </footer>
-    <script>
-      function init() {
-        var imgDefer = document.getElementsByTagName('img');
-        for (var i = 0; i < imgDefer.length; i++) {
-          if (imgDefer[i].getAttribute('data-src')) {
-            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-          }
-        }
-      }
-      window.onload = init;
-    </script>
   </body>
 </html>

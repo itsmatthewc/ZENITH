@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
     <link rel="stylesheet" type="text/css" href="../styles/seasons.css"/>
+    <script src="../scripts/quickpicload.js"></script>
   </head>
   <body>
     <header>
@@ -19,8 +20,8 @@
       <li>
         <figure>
           <a href="./fall/white.html">
-            <img class="default" src="./jess/0-hue-white-fullbody.jpg"/>
-            <img class="special" data-src="./jess/special-0.jpg"/>
+            <img class="season-default" src="./jess/0-hue-white-fullbody.jpg"/>
+            <img class="season-special" data-src="./jess/special-0.jpg"/>
           </a>
           <figcaption>
             Classic White<br>
@@ -31,8 +32,8 @@
       <li>
         <figure>
           <a href="./fall/orange.html">
-            <img class="default" src="./jess/19-hue-orange-fullbody.jpg"/>
-            <img class="special" data-src="./jess/special-19.jpg"/>
+            <img class="season-default" src="./jess/19-hue-orange-fullbody.jpg"/>
+            <img class="season-special" data-src="./jess/special-19.jpg"/>
           </a>
           <figcaption>
             Soft Orange<br>
@@ -43,8 +44,8 @@
       <li>
         <figure>
           <a href="./fall/yellow.html">
-            <img class="default" src="./jess/51-hue-yellow-fullbody.jpg"/>
-            <img class="special" data-src="./jess/special-51.jpg"/>
+            <img class="season-default" src="./jess/51-hue-yellow-fullbody.jpg"/>
+            <img class="season-special" data-src="./jess/special-51.jpg"/>
           </a>
           <figcaption>
             Spongy Yellow<br>
@@ -55,8 +56,8 @@
       <li>
         <figure>
           <a href="./fall/green.html">
-            <img class="default" src="./jess/147-hue-green-fullbody.jpg"/>
-            <img class="special" data-src="./jess/special-147.jpg"/>
+            <img class="season-default" src="./jess/147-hue-green-fullbody.jpg"/>
+            <img class="season-special" data-src="./jess/special-147.jpg"/>
           </a>
           <figcaption>
             Barnacle Green<br>
@@ -67,8 +68,8 @@
       <li>
         <figure>
           <a href="./fall/blue.html">
-            <img class="default" src="./jess/235-hue-blue-fullbody.jpg"/>
-            <img class="special" data-src="./jess/special-235.jpg"/>
+            <img class="season-default" src="./jess/235-hue-blue-fullbody.jpg"/>
+            <img class="season-special" data-src="./jess/special-235.jpg"/>
           </a>
           <figcaption>
             Hudson Blue<br>
@@ -79,8 +80,8 @@
       <li>
         <figure>
           <a href="./fall/pink.html">
-            <img class="default" src="./jess/300-hue-pink-fullbody.jpg"/>
-            <img class="special" data-src="./jess/special-300.jpg"/>
+            <img class="season-default" src="./jess/300-hue-pink-fullbody.jpg"/>
+            <img class="season-special" data-src="./jess/special-300.jpg"/>
           </a>
           <figcaption>
             Pretty Pink<br>
@@ -113,16 +114,5 @@
         </li>
       </ul>
     </footer>
-    <script>
-      function init() {
-        var imgDefer = document.getElementsByTagName('img');
-        for (var i = 0; i < imgDefer.length; i++) {
-          if (imgDefer[i].getAttribute('data-src')) {
-            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-          }
-        }
-      }
-      window.onload = init;
-    </script>
   </body>
 </html>
