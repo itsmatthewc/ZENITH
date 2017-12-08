@@ -163,6 +163,32 @@ button:active {
   cursor: pointer;
 }
 
+#added-to-cart {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(100, 100, 100, .4);
+  position: fixed;
+  z-index: 100;
+}
+
+#added-to-cart > div {
+  background: red;
+  display: inline-block;
+  top: 41%;
+  left: 41%;
+  position: absolute;
+  padding: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  background: white;
+  border: 1px solid #7f7f7f;
+  font-weight: 200;
+}
+
+#added-to-cart h1 {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 830px) {
     article {
         position: relative !important;

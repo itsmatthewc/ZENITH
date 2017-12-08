@@ -150,6 +150,7 @@ footer img {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   z-index: 3;
+  color: white;
 }
 
 #videos a:hover video {
